@@ -311,3 +311,13 @@ username: "user1" password: "1"
 ```
 docker-compose run backend python manage.py test
 ```
+
+----
+
+Написан скрипт для создания тестовых данных.
+Скрипт находится в atom_chat\backend\chat\management\commands\create_test_data.py
+
+Чтобы запустить скрипт, необходимо выполнить следующую команду из корня проекта:
+```
+docker-compose exec backend python manage.py create_test_data
+```
